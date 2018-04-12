@@ -1,0 +1,11 @@
+2018-04-12 21:20:23,440 ['exportallapplications.py']
+2018-04-12 21:20:23,441 <class 'argparse.Namespace'>
+2018-04-12 21:20:23,441 Namespace(configfile='apipcs_config.json', destdir='./')
+2018-04-12 21:20:23,441 ('apipcs_config.json',)
+2018-04-12 21:20:23,442 ./
+2018-04-12 21:20:23,442 Reading Config from - apipcs_config.json
+2018-04-12 21:20:23,444 None
+2018-04-12 21:20:23,445 apipserver::init created http session for https://129.150.212.227/apiplatform
+2018-04-12 21:20:23,446 Using https://129.150.212.227/apiplatform ;None ;None
+2018-04-12 21:20:23,446 inside name not important with <APIPCSmodule.apipserver object at 0x0358A310> and ./
+2018-04-12 21:20:23,456 Starting new HTTPS connection (1): 129.150.212.227

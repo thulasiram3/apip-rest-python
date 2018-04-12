@@ -1,0 +1,259 @@
+{
+    "vanityName": "sample",
+    "updatedBy": "weblogic",
+    "implementation": {
+        "executions": {
+            "request": [
+                "1",
+                "5",
+                "6",
+                "2"
+            ],
+            "response": [
+                "3",
+                "4"
+            ]
+        },
+        "policies": [
+            {
+                "schemaVersion": "1",
+                "draft": false,
+                "id": "1",
+                "type": "o:ApiRequest",
+                "version": "1.0",
+                "config": {
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "url": "energy/1.0"
+                }
+            },
+            {
+                "schemaVersion": "3",
+                "draft": false,
+                "id": "2",
+                "type": "o:ServiceRequest",
+                "version": "1.0",
+                "config": {
+                    "useProxy": false,
+                    "url": "http://private-8ab61-energy79.apiary-mock.com"
+                }
+            },
+            {
+                "schemaVersion": "1",
+                "id": "3",
+                "type": "o:ServiceResponse",
+                "version": "1.0",
+                "config": {}
+            },
+            {
+                "schemaVersion": "1",
+                "id": "4",
+                "type": "o:ApiResponse",
+                "version": "1.0",
+                "config": {}
+            },
+            {
+                "schemaVersion": "1",
+                "comments": "",
+                "draft": true,
+                "id": "5",
+                "type": "o:KeyValidation",
+                "version": "1.0",
+                "config": {
+                    "keysource": "QUERY_PARAM",
+                    "keyheader": "key"
+                }
+            },
+            {
+                "schemaVersion": "3",
+                "comments": "",
+                "draft": true,
+                "id": "6",
+                "type": "o:ServiceCallout",
+                "version": "2.0",
+                "config": {
+                    "codes": [],
+                    "includeAsConditions": true,
+                    "methods": [
+                        "GET"
+                    ],
+                    "requestPayload": "",
+                    "serviceUrl": "http://private-8ab61-energy79.apiary-mock.com",
+                    "action": "PASS",
+                    "headerConfig": {
+                        "headersToAddOrUpdate": [
+                            {
+                                "name": "Warning",
+                                "value": "test"
+                            }
+                        ]
+                    },
+                    "useProxy": false,
+                    "case": "ANY"
+                }
+            }
+        ],
+        "specification": {
+            "apiary": {
+                "docType": "apiblueprint",
+                "apiaryData": {
+                    "apiProjectUuid": "59a40d79877ec30700f8d49b",
+                    "apiProjectUriTemplate": "https://enterprise-integrations.apiary.io/api-projects/59a40d79877ec30700f8d49b",
+                    "descriptionDocumentUrlTemplate": "https://enterprise-integrations.apiary.io/api-projects/59a40d79877ec30700f8d49b"
+                },
+                "name": "serviceTickets",
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJjbGllbnRfaWQiOiIwOTUyYzk2Ni1iZDQxLTQzZTctOWE1MS0xOWYwNjcwM2NmMzgiLCJzdWIiOiI1OTlhZDVmMTRjN2MwNTA3MDA1MWZhYjAiLCJzY29wZSI6Im9yYWNsZSIsImp0aSI6ImM1ODU2OGU1LTUzMWQtNGU1OC1hZGJjLTIyMGIyZjk0MmE5OSIsImlhdCI6MTUyMTAyMzQwNiwiZXhwIjoxNTIxMDIzNzA2LCJpc3MiOiJrb3Rib2QifQ.JhEXq1ohJKv1x0kbKXb8wDToNyStVqe2_ciAlTdZusJXR1uwYm8sk-qMaJx3Y4796NyitgbSury3o07Kfndzl8GN4cx6BSb3UFYbmA7XpkJBQGK_eukVXxIFneWpNTRi_ub4uBoWMnlPN-wLLaXLmkuKU9Uo6meyFCwJmLSEqYogv-e8gyUt6oXKin_FwgfOk6IZgATGUjVWio8dkqKtMz38D40BYj-BD_CmB7FlJ7-g5Q0nY7WGVtOVOZEkNuMxhaZ24FsRRVwbv3GtyfdO3KBW9XVE8yJzrxGU-323h-ih7MbN3784dM6xtteCu6rkg7AhHTxGJFF6wcTyxZE7ZZpg2d5IjtyXTEii0UTUd-iIBBYZDvUPdUkYPTxu_SWdaCsXBz61T0KIwEHfBGqeF9TinOUo84rt63RFrdMfKFgLhdU4ojm6CzrGWk9c-SzKLaoRfQFeilCWhta2R-5DD6HMBtQ8Bjienzhpn-4_EJ2gNg4DEn5Btnn7PKu_crGvwY_JEANGQyPLAXWHrLtaPtTyx_XXJUBU7rhrjlIKy4p-EhnkZ4d8R54ySofhmqZU1QKDTORIyCp01ZzDivS7rbMPid2Garg6NrMia_UaOE7upTpqtxvBXjsisffLimm7hSC2VyMMJxOFtkQhvZrzKKDvLVXYMfPFSB_8VzOZjxQ",
+                "refreshToken": "9b441eb6f6b4f917d5c7453d0f9934d2"
+            }
+        }
+    },
+    "version": "1.0",
+    "createdAt": "2018-03-13T23:36:15+0000",
+    "createdBy": "weblogic",
+    "publication": {
+        "stateUpdatedAt": "2018-04-05T13:45:56+0000",
+        "visibility": "PROTECTED",
+        "portalUrl": "https://129.150.212.227:443/developers/apis/sample",
+        "state": "PUBLISHED",
+        "iterationId": "19",
+        "stateUpdatedBy": "weblogic"
+    },
+    "name": "Energy123",
+    "details": {
+        "overview": {
+            "data": "api100_overview_html_overview-html.html",
+            "docType": "html",
+            "dataType": "file"
+        },
+        "documentation": {
+            "data": "api100_documentation_doc.sample.html",
+            "docType": "html",
+            "dataType": "file"
+        }
+    },
+    "links": [
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "self",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "canonical",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "iteration",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/iterations/19"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "history",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/history"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "edit",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "rename",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/identity"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "validate",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/validation"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "lifecycle",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/state"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "publish",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/publication"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "unpublish",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/publication"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/references"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.applications",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/references/applications"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.gateways",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/references/gateways"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.services",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/references/services"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.serviceaccounts",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/references/serviceaccounts"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "entitlements",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/entitlements"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "deployments",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/deployments"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grants",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants"
+        }
+    ],
+    "state": "ALPHA",
+    "id": "100",
+    "iterationId": "19",
+    "updatedAt": "2018-04-05T13:45:56+0000",
+    "artifacts": [
+        {
+            "content-type": "text/html; charset=utf-8",
+            "pathname": "api100_documentation_doc.sample.html"
+        },
+        {
+            "content-type": "text/html; charset=utf-8",
+            "pathname": "api100_overview_html_overview-html.html"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+
+<div style="width:75%;text-align:justify;font-family:sans-serif">
+	<div>
+		<h2 style="color:blue">Documentation</h2>
+		<p>
+			Gives a real time current month's usage of Gas and Electricity Services. Also gives an estimate of the next billing cycle's usage.
+		</p>
+		<h3>Usage Requirements</h3>
+		<p>You must first create your application on the developer portal. Then you register your application to this API. After registering, you receive an application key; you must pass this key in an <code>api-key</code> header with requests. Requests not including this header or a valid key are rejected.</p>
+		<p>You must also include your tenant id number in a <code>tenant-id</code> header with each request. Requests not including this header or a valid tenant id number are rejected.</p>
+		<h3>Rate Limit</h3>
+		<p>This API is limited to five requests per minute. Requests exceeding this threshold are rejected.</p>
+		<h3>Required Headers</h3>
+		<table style="width:100%;border:1px solid black; width:55%">
+		  <tr>
+			<th style="border:1px solid black">Header
+			</th>
+			<th style="border:1px solid black">Value
+			</th>
+		  </tr>
+		  <tr>
+			<td style="border:1px solid black"><code>api-key</code></td>
+			<td style="border:1px solid black">Key provided with application registration</td>		
+		  </tr>
+		  <tr>
+			<td style="border:1px solid black"><code>tenant-id</code></td>
+			<td style="border:1px solid black">Your tenant id number</td>		
+		  </tr>
+		</table>
+		<h3><span style="background-color:#36B342;color:white; width:4%; padding:5px 10px 5px 10px">GET</span>     Current Month</h3>
+		<p>Returns current month's usage information for the provided customer id.</p>
+		<p><span style="font-weight:bold">Resource URL</span>: <code>http://&lt;hostname&gt;:8001/&lt;API Name&gt;/&lt;API Version&gt;/usage/current/month/{customer id}</code></p>
+		<p><span style="font-weight:bold">Example Request</span>: <code> curl -X GET -H "tenant-id: 7786" -H "api-key: 29013cc1-667d-4db4-96d8-cc3ee0c4deb2" "http://slc05adx.oracle.com:8001/Energy7786/1/usage/current/month/4859634"</code>
+		<p><span style="font-weight:bold">Example Response</span>:</p>
+		<div style="background-color:#f8f8f8;padding:10px 35px 10px 35px;width:80%">
+				<pre>
+[
+  {
+    "account_number": "4859634",
+    "name": "Darko",
+    "gas_usage": "20,006 Btu",
+    "gas_cost": "&yen; 46,896",
+    "electricity_usage": "3,430 kW",
+    "electricity_cost": "&yen; 12,932",
+    "enviornment": "Japan 1"
+  }
+]
+				</pre>
+
+		</div>
+		<h3><span style="background-color:#36B342;color:white; width:4%; padding:5px 10px 5px 10px">GET</span>     Estimate</h3>
+		<p>Returns an estimate of next month's usage information for the provided customer id.</p>
+		<p><span style="font-weight:bold">Resource URL</span>: <code>http://&lt;hostname&gt;:8001/&lt;API Name&gt;/&lt;API Version&gt;/estimate/{customer id}</code></p>
+		<p><span style="font-weight:bold">Example Request</span>: <code> curl -X GET -H "tenant-id: 7786" -H "api-key: 29013cc1-667d-4db4-96d8-cc3ee0c4deb2" "http://slc05adx.oracle.com:8001/Energy7786/1/estimate/4859634"</code>
+		<p><span style="font-weight:bold">Example Response</span>:</p>
+		<div style="background-color:#f8f8f8;padding:10px 35px 10px 35px;width:80%">
+				<pre>
+[
+  {
+    "account_number": "4859634",
+    "name": "Darko",
+    "gas_estimate_usage": "32,000 Btu",
+    "gas_estimate_cost": "&yen; 63,322",
+    "electricity_estimate_usage": "5,325 kW",
+    "electricity_estimate_cost": "&yen; 18,324",
+    "enviornment": "Japan 1"
+  }
+]
+				</pre>
+
+		</div>
+</div>
+<p><em>Oracle Confidential. Copyright &copy; 2016, Oracle and/or its affiliates. All rights reserved.</em></p>

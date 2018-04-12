@@ -1,0 +1,123 @@
+{
+    "offset": 0,
+    "count": 1,
+    "limit": 128,
+    "hasMore": false,
+    "links": [
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grantees",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/grants/ManageAPIGrant/grantees",
+            "grant": "ManageAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grantees",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/grants/ViewAllDetailsAPIGrant/grantees",
+            "grant": "ViewAllDetailsAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grantees",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/grants/DeployAPIGrant/grantees",
+            "grant": "DeployAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grantees",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/grants/EntitleAPIGrant/grantees",
+            "grant": "EntitleAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grantees",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/grants/ViewPublicDetailsAPIGrant/grantees",
+            "grant": "ViewPublicDetailsAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "self",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants?offset=0&limit=128"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "canonical",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants"
+        },
+        {
+            "method": "GET",
+            "rel": "types",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/grants/types"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "create",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants",
+            "grant": "ManageAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "create",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants",
+            "grant": "ViewAllDetailsAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "create",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants",
+            "grant": "DeployAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "create",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants",
+            "grant": "EntitleAPIGrant"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "create",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants",
+            "grant": "ViewPublicDetailsAPIGrant"
+        }
+    ],
+    "items": [
+        {
+            "createdAt": "2018-03-13T23:36:15+0000",
+            "createdBy": "weblogic",
+            "links": [
+                {
+                    "templated": "true",
+                    "method": "DELETE",
+                    "rel": "delete",
+                    "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/100/grants/ManageAPIGrant/users/weblogic"
+                }
+            ],
+            "type": "ManageAPIGrant",
+            "user": {
+                "roles": [
+                    "PlanManager",
+                    "Administrator",
+                    "ServiceManager",
+                    "ApplicationDeveloper",
+                    "GatewayRuntime",
+                    "GatewayManager",
+                    "APICSPlatformAdministrator",
+                    "APIManager"
+                ],
+                "id": "weblogic"
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+	"server": "https://129.150.212.227/apiplatform" ,
+	"auth": ["weblogic","Welcome123#"],
+	"proxy": {
+		"http": "www-proxy.us.oracle.com:80", 
+		"https": "www-proxy.us.oracle.com:80"
+	}
+}

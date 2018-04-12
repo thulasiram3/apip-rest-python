@@ -1,0 +1,6 @@
+2018-04-12 21:18:32,462 ['exportallapis.py']
+2018-04-12 21:18:32,463 <class 'argparse.Namespace'>
+2018-04-12 21:18:32,464 Namespace(configfile='apipcs_config.json', destdir='./')
+2018-04-12 21:18:32,466 ('apipcs_config.json',)
+2018-04-12 21:18:32,466 Reading Config from - apipcs_config.json
+2018-04-12 21:18:32,469 Using https://129.150.212.227/apiplatform ;None ;None

@@ -1,0 +1,179 @@
+{
+    "updatedBy": "weblogic",
+    "implementation": {
+        "executions": {
+            "request": [
+                "1",
+                "2"
+            ],
+            "response": [
+                "3",
+                "4"
+            ]
+        },
+        "policies": [
+            {
+                "schemaVersion": "1",
+                "draft": false,
+                "id": "1",
+                "type": "o:ApiRequest",
+                "version": "1.0",
+                "config": {
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "url": "sample"
+                }
+            },
+            {
+                "schemaVersion": "3",
+                "draft": false,
+                "id": "2",
+                "type": "o:ServiceRequest",
+                "version": "1.0",
+                "config": {
+                    "useProxy": false,
+                    "url": "http://private-8ab61-energy79.apiary-mock.com"
+                }
+            },
+            {
+                "schemaVersion": "1",
+                "id": "3",
+                "type": "o:ServiceResponse",
+                "version": "1.0",
+                "config": {}
+            },
+            {
+                "schemaVersion": "1",
+                "id": "4",
+                "type": "o:ApiResponse",
+                "version": "1.0",
+                "config": {}
+            }
+        ]
+    },
+    "version": "1.0",
+    "createdAt": "2018-03-22T13:39:16+0000",
+    "createdBy": "weblogic",
+    "publication": {
+        "visibility": "PROTECTED",
+        "state": "UNPUBLISHED"
+    },
+    "name": "sample",
+    "details": {},
+    "links": [
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "self",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "canonical",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "iteration",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/iterations/1"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "history",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/history"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "edit",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "rename",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/identity"
+        },
+        {
+            "templated": "true",
+            "method": "DELETE",
+            "rel": "delete",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107"
+        },
+        {
+            "templated": "true",
+            "method": "POST",
+            "rel": "validate",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/validation"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "lifecycle",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/state"
+        },
+        {
+            "templated": "true",
+            "method": "PUT",
+            "rel": "unpublish",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/publication"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/references"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.applications",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/references/applications"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.gateways",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/references/gateways"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.services",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/references/services"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "references.serviceaccounts",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/references/serviceaccounts"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "entitlements",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/entitlements"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "deployments",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/deployments"
+        },
+        {
+            "templated": "true",
+            "method": "GET",
+            "rel": "grants",
+            "href": "https://129.150.212.227:443/apiplatform/management/v1/apis/107/grants"
+        }
+    ],
+    "state": "ALPHA",
+    "id": "107",
+    "iterationId": "1",
+    "updatedAt": "2018-03-22T13:39:16+0000",
+    "artifacts": []
+}
